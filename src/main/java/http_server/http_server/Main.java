@@ -17,7 +17,7 @@ import org.glassfish.jersey.server.ResourceConfig;
  */
 public class Main {
 
-     public static final String BASE_URI = "http://127.0.0.1:8080/myapp/";
+     public static final String BASE_URI = "http://0.0.0.1:8080/myapp/";
      
       public static HttpServer startServer() {
         // create a resource config that scans for JAX-RS resources and providers
