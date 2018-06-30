@@ -5,6 +5,7 @@
  */
 package http_server.http_server;
 
+import java.util.logging.Logger;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -19,8 +20,12 @@ import javax.ws.rs.core.Response;
 @Produces(MediaType.APPLICATION_JSON)
 public class MyResource {
 
+    Logger log = Logger.getLogger(getClass().getName());
+    
+    @Path("/test")
     @GET
     public Response test() {
+        log.info("test");
         return Response.status(Response.Status.OK).build();
     }
 
