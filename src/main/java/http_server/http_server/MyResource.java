@@ -5,7 +5,6 @@
  */
 package http_server.http_server;
 
-import javafx.scene.media.Media;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
